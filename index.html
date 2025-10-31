@@ -3,44 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Marc Ragos | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Marc Ragos</h1>
-    <p>Future Game Developer & IT Student</p>
+  <header class="navbar">
+    <h1 class="logo">Marc<span>Ragos</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm passionate about creating interactive digital experiences —
-        from modern websites to game projects that bring ideas to life.
-      </p>
-    </section>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Marc</span> 👋</h2>
+      <p>Future Game Developer & Creative IT Student</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-    <section class="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li>🎮 Smart LPG Guardian – IoT Safety System</li>
-        <li>🛍️ Shopkit – Anime Figure E-Commerce App</li>
-        <li>🏖️ QR-Based Resort Booking System</li>
-      </ul>
-    </section>
+  <section id="about" class="about glass-card">
+    <h2>About Me</h2>
+    <p>
+      I’m passionate about crafting digital experiences — from game design and 
+      interactive apps to full-stack web development. My goal is to turn creative 
+      ideas into modern, responsive, and user-friendly projects.
+    </p>
+  </section>
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:marcragos@email.com">marcragos@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/YourUsername</a></p>
-    </section>
-  </main>
+  <section id="projects" class="projects glass-card">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>🎮 Smart LPG Guardian</h3>
+        <p>IoT system for early gas leak and fire detection.</p>
+      </div>
+      <div class="project-card">
+        <h3>🛍️ Shopkit</h3>
+        <p>Anime figure e-commerce app with Firebase backend.</p>
+      </div>
+      <div class="project-card">
+        <h3>🏖️ Maison De Naya</h3>
+        <p>QR Code-based resort booking and management system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact glass-card">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate or chat about tech & design!</p>
+    <p>Email: <a href="mailto:marcragos@email.com">marcragos@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/Macmac111203" target="_blank">github.com/Macmac111203</a></p>
+  </section>
 
   <footer>
     <p>© 2025 Marc Ragos | All Rights Reserved</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
