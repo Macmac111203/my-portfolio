@@ -3,67 +3,293 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marc Ragos | Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="description" content="Marc Ragos - Game Developer & Creative IT Student Portfolio" />
+  <title>Marc Ragos | Portfolio 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+  </div>
+
+  <!-- Navigation -->
   <header class="navbar">
-    <h1 class="logo">Marc<span>Ragos</span></h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="theme-toggle">🌙</button>
+    <div class="nav-container">
+      <h1 class="logo">Marc Leo<span>Ragos</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Hello, I'm <span>Marc</span> 👋</h2>
-      <p>Future Game Developer & Creative IT Student</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <div class="hero-text">
+        <div class="greeting">Hello, I'm</div>
+        <h1 class="hero-name">
+          <span class="name-highlight">Marc Leo C. Ragos</span>
+        </h1>
+        <div class="typing-text">
+          <span class="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Future Game Developer & Creative IT Student passionate about crafting 
+          immersive digital experiences and bringing ideas to life.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1"></div>
+        <div class="floating-card card-2"></div>
+        <div class="floating-card card-3"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
     </div>
   </section>
 
-  <section id="about" class="about glass-card">
-    <h2>About Me</h2>
-    <p>
-      I’m passionate about crafting digital experiences — from game design and 
-      interactive apps to full-stack web development. My goal is to turn creative 
-      ideas into modern, responsive, and user-friendly projects.
-    </p>
-  </section>
-
-  <section id="projects" class="projects glass-card">
-    <h2>My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>🎮 Smart LPG Guardian</h3>
-        <p>IoT system for early gas leak and fire detection.</p>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
       </div>
-      <div class="project-card">
-        <h3>🛍️ Shopkit</h3>
-        <p>Anime figure e-commerce app with Firebase backend.</p>
-      </div>
-      <div class="project-card">
-        <h3>🏖️ Maison De Naya</h3>
-        <p>QR Code-based resort booking and management system.</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            I'm a creative IT student with a passion for game development and digital innovation.
+          </p>
+          <p>
+            I specialize in crafting immersive digital experiences and from interactive game design 
+            to full-stack web development. My goal is to transform creative ideas into modern, 
+            responsive, and user-friendly projects that leave a lasting impact.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new technologies, experimenting with game mechanics, 
+            or contributing to open-source projects. I believe in continuous learning and pushing 
+            the boundaries of what's possible.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Learning</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Passionate</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact glass-card">
-    <h2>Contact Me</h2>
-    <p>Let’s collaborate or chat about tech & design!</p>
-    <p>Email: <a href="mailto:marcragos@email.com">marcragos@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/Macmac111203" target="_blank">github.com/Macmac111203</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Game Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Game Design</span>
+            <span class="skill-tag">3D Modeling</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>IoT & Hardware</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">Sensors</span>
+            <span class="skill-tag">Embedded Systems</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Blender</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Marc Ragos | All Rights Reserved</p>
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon">🎮</div>
+          <div class="project-content">
+            <h3 class="project-title">Smart LPG Guardian</h3>
+            <p class="project-description">
+              IoT system for early gas leak and fire detection with real-time monitoring and alerts.
+            </p>
+            <div class="project-tags">
+              <span>IoT</span>
+              <span>Arduino</span>
+              <span>Sensors</span>
+            </div>
+          </div>
+          <div class="project-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🛍️</div>
+          <div class="project-content">
+            <h3 class="project-title">Shopkit</h3>
+            <p class="project-description">
+              Anime figure e-commerce app with Firebase backend, authentication, and real-time updates.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Firebase</span>
+              <span>E-commerce</span>
+            </div>
+          </div>
+          <div class="project-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🏖️</div>
+          <div class="project-content">
+            <h3 class="project-title">Maison De Naya</h3>
+            <p class="project-description">
+              QR Code-based resort booking and management system with seamless user experience.
+            </p>
+            <div class="project-tags">
+              <span>QR Code</span>
+              <span>Full Stack</span>
+              <span>Booking System</span>
+            </div>
+          </div>
+          <div class="project-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project in mind? Let's collaborate and create something amazing together!</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                <path d="L22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:carolinoragos@gmail.com">carolinoragos@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p>Philippines</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Macmac111203" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Marc Leo Ragos. All rights reserved.</p>
+      <p class="footer-note">Built with passion and modern web technologies</p>
+    </div>
   </footer>
 </body>
 </html>
